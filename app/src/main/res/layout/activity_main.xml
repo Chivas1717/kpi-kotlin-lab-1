@@ -1,76 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent" />
 
-        <EditText
-            android:id="@+id/editH"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="H (%)"
-            android:inputType="numberDecimal" />
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+    android:fitsSystemWindows="true" />
 
-        <EditText
-            android:id="@+id/editC"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="C (%)"
-            android:inputType="numberDecimal" />
-
-        <EditText
-            android:id="@+id/editS"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="S (%)"
-            android:inputType="numberDecimal" />
-
-        <EditText
-            android:id="@+id/editN"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="N (%)"
-            android:inputType="numberDecimal" />
-
-        <EditText
-            android:id="@+id/editO"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="O (%)"
-            android:inputType="numberDecimal" />
-
-        <EditText
-            android:id="@+id/editW"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="W (%)"
-            android:inputType="numberDecimal" />
-
-        <EditText
-            android:id="@+id/editA"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:hint="A (%)"
-            android:inputType="numberDecimal" />
-
-        <Button
-            android:id="@+id/calculateButton"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:text="Розрахувати" />
-
-        <TextView
-            android:id="@+id/resultTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Результати:"
-            android:textSize="18sp"
-            android:paddingTop="16dp" />
-
-    </LinearLayout>
-</ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

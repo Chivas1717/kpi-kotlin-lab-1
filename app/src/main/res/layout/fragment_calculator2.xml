@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Поля для вводу елементарного складу та теплоти згоряння -->
+    <EditText
+        android:id="@+id/editC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="C (%)" />
+
+    <EditText
+        android:id="@+id/editH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="H (%)" />
+
+    <EditText
+        android:id="@+id/editO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="O (%)" />
+
+    <EditText
+        android:id="@+id/editS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="S (%)" />
+
+    <EditText
+        android:id="@+id/editQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Q (МДж/кг)" />
+
+    <EditText
+        android:id="@+id/editW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="W (%)" />
+
+    <EditText
+        android:id="@+id/editA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="A (%)" />
+
+    <EditText
+        android:id="@+id/editV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="V (мг/кг)" />
+
+    <!-- Кнопка для запуску обчислень -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати" />
+
+    <!-- Текстове поле для відображення результату -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Результати з’являться тут" />
+</LinearLayout>
